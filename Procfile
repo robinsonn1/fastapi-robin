@@ -1,1 +1,1 @@
-web: gunicorn -w 4 -k unicorn.workers.UnicornWorker myapi.py
+web: gunicorn --bind 0.0.0.0:$PORT myapi:app
