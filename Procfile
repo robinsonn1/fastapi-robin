@@ -1,1 +1,1 @@
-web: gunicorn --bind 0.0.0.0:$PORT myapi:app
+web: gunicorn --bind 0.0.0.0:$PORT unicorn.workers.UnicornWorker myapi:app
